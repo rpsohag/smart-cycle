@@ -1,0 +1,25 @@
+{
+  "name": "smart-cycle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "build": "tsc",
+    "start" : "node build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.5",
+    "express": "^4.21.2",
+    "typescript": "^5.7.3",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
