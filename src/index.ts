@@ -1,6 +1,6 @@
 import express from 'express';
 import * as dotenv from 'dotenv';
-import { connectDB } from './db';
+import connectToDatabase from './db';
 
 dotenv.config();
 const app = express();
@@ -11,6 +11,6 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-    connectDB();
+    connectToDatabase();
     console.log(`Example app listening on port ${port}`);
 });
